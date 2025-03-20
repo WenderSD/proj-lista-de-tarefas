@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin-top: 50px;
+    background-color: #cccccc;
+    font-family: "Roboto", sans-serif;
+}
+
+h1{
+    text-align: center;
+}
+
+.header{
+    display: flex;
+    width: auto;
+    height: 70px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.escrever{
+    padding: 20px 60px 20px 60px;
+    font-size: large;
+    margin-right: 0px;
+    height: 65px;
+    width: 500px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.confirmar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: forestgreen;
+    color: aliceblue;
+    font-size: 14px;
+    margin-left: 0px;
+    height: 65px;
+    width: 90px;
+    border: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: pointer;
+}
+
+.tarefas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin-top: 40px;
+}
+
+.tarefabox{
+    display: flex;
+    margin-top: 35px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    background: white;
+    height: 70px;
+    box-shadow: 0 0 20px rgb(43, 43, 43);
+}
+
+.tarefabox.clicada{
+    background-color: rgb(189, 255, 198);
+    justify-self: flex-start;
+}
+
+.tarefabox.clicada .tarefa{
+    text-decoration: line-through;
+    color: rgb(105, 105, 105);
+    
+}
+
+.icone{
+    flex: 8%;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.mdi-check-circle{
+    color:  forestgreen;
+}
+.tarefa{
+    display: flex;
+    align-items: center;
+    flex: 72%;
+    height: 70px;
+    padding-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.delete{
+    border: none;
+    display: flex;
+    flex: 20%;
+    background-color: red;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    cursor: pointer;
+}
